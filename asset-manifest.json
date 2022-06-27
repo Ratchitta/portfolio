@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mkmksgit-web/static/css/main.073c9b0a.css",
-    "main.js": "/mkmksgit-web/static/js/main.7c95ede3.js",
-    "static/js/787.0bc966da.chunk.js": "/mkmksgit-web/static/js/787.0bc966da.chunk.js",
-    "static/media/logo.svg": "/mkmksgit-web/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/mkmksgit-web/index.html",
-    "main.073c9b0a.css.map": "/mkmksgit-web/static/css/main.073c9b0a.css.map",
-    "main.7c95ede3.js.map": "/mkmksgit-web/static/js/main.7c95ede3.js.map",
-    "787.0bc966da.chunk.js.map": "/mkmksgit-web/static/js/787.0bc966da.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.ab968a56.js",
+    "static/js/787.0bc966da.chunk.js": "/static/js/787.0bc966da.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.ab968a56.js.map": "/static/js/main.ab968a56.js.map",
+    "787.0bc966da.chunk.js.map": "/static/js/787.0bc966da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.7c95ede3.js"
+    "static/js/main.ab968a56.js"
   ]
 }
