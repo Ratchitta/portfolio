@@ -38,7 +38,11 @@ export const Navbar = () => {
   ];
   return (
     <header className="bg-white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-center p-6 lg:px-8">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+        {/* Logo (Name) */}
+        <div className="p-2">
+          <p className="logo text-2xl">Ratchitta Panya-ngam</p>
+        </div>
         {/* Mobile Menubar */}
         <div className="flex lg:hidden"></div>
         {/* Normal Menubar */}
@@ -67,7 +71,7 @@ export const Navbar = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute z-10 mt-3 max-w-lg overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute z-10 right-0 mt-3 max-w-lg overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4 relative">
                   {projects.map((item) => (
                     <div
