@@ -5,15 +5,11 @@ import Aos from "aos";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import theme from "@/theme";
+import "../styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function App({
-  Component,
-  pageProps,
-}: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -29,16 +25,12 @@ export default function App({
           name="description"
           content="This is ratchitta's portfolio website."
         />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <Component {...pageProps} />
     </>
   );
 }
