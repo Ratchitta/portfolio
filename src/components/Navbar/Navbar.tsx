@@ -10,6 +10,7 @@ import FolderCopyRoundedIcon from "@mui/icons-material/FolderCopyRounded";
 
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import Link from "next/link";
 
 export const Navbar = () => {
   const projects = [
@@ -61,12 +62,18 @@ export const Navbar = () => {
         </div>
         {/* Normal menubar */}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link
+            href="/"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Home
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link
+            href="#"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             About Me
-          </a>
+          </Link>
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-0.5 text-sm font-semibold leading-6 text-gray-900 focus:outline-none ">
               Project
@@ -95,13 +102,13 @@ export const Navbar = () => {
                       <div className="flex flex-none items-center justify-center">
                         <item.icon className="w-6 h-6 text-gray-600 group-hover:text-blue-500" />
                       </div>
-                      <a
+                      <Link
                         href={item.url}
                         className="font-semibold block min-w-max text-gray-900"
                       >
                         {item.name}
                         <span className="absolute inset-0" />
-                      </a>
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -132,18 +139,18 @@ export const Navbar = () => {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
+                <Link
                   href="/"
                   className="-mx-3 block py-2 px-3 text-base font-semibold leading-6 text-gray-900"
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="-mx-3 block py-2 px-3 text-base font-semibold leading-6 text-gray-900"
                 >
                   About Me
-                </a>
+                </Link>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
