@@ -2,12 +2,9 @@ import type { AppProps } from "next/app";
 import { useEffect } from "react";
 import Aos from "aos";
 
-import { Inter } from "next/font/google";
 import Head from "next/head";
 
 import "../styles/globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
