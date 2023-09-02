@@ -1,3 +1,3 @@
 import WIP from "./WIP";
 
-export default WIP;
+export { WIP };

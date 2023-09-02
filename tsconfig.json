@@ -15,15 +15,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["/*"],
-      "@components/*": ["./src/components/*"],
-      "@containers/*": ["./src/containers/*"],
-      "@routes/*": ["./src/routes/*"],
-      "@stories/*": ["./src/stories/*"]
-    }
+    "baseUrl": "./src"
   },
-  "include": ["src"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src"],
   "exclude": ["node_modules"]
 }
