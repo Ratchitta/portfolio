@@ -1,30 +1,27 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { Box, Container } from "@mui/material";
 
 import ExpandIcon from "@mui/icons-material/ExpandMoreRounded";
-
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 
 import { Flex, Link, Text } from "components/";
 import { Button, Menu, MenuItem, Icon } from "@mui/material";
 import { projects } from "./tabs";
 import { useNavigate } from "react-router-dom";
+import { useDisclosure } from "hooks";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const [projectsMenuOpen, setProjectsMenuOpen] = useState<boolean>(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+  const { isOpen, close, toggle } = useDisclosure();
 
   const navigate = useNavigate();
 
   const handleClickProjectsMenu = (event: React.MouseEvent<HTMLElement>) => {
     handleOpenProjectsMenu(event);
-    setProjectsMenuOpen(!projectsMenuOpen);
+    toggle();
   };
 
   const handleCloseProjectsMenu = () => {
-    setProjectsMenuOpen(false);
+    close();
     setAnchorEl(null);
   };
 
@@ -69,7 +66,7 @@ const Navbar = () => {
               Projects
             </Button>
             <Menu
-              open={projectsMenuOpen}
+              open={isOpen}
               onClose={handleCloseProjectsMenu}
               anchorEl={anchorEl}
               transformOrigin={{ horizontal: "right", vertical: "top" }}
