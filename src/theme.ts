@@ -1,5 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
+const MiSansThaiPath = "/assets/fonts/MiSansThai/MiSansThaiVF.woff2";
+
 export const theme = createTheme({
   palette: {
     primary: {
@@ -42,7 +44,14 @@ export const theme = createTheme({
     white: "#FFFFFF",
   },
   typography: {
-    fontFamily: '"Noto Sans Thai","Roboto", "Helvetica", "Arial",sans-serif',
+    fontFamily: [
+      '"MiSans Thai"',
+      '"Noto Sans Thai"',
+      '"Roboto"',
+      '"Helvetica"',
+      "sans-serif",
+    ].join(","),
+    // 'MiSansThai, "Noto Sans Thai","Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
       fontSize: "3.75rem",
       fontWeight: 700,
@@ -83,6 +92,17 @@ export const theme = createTheme({
       fontSize: "1rem",
       fontWeight: 500,
       lineHeight: "1.5rem",
+    },
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        @font-face {
+          font-family: "MiSans Thai";
+          font-display: swap;
+          src: url(${MiSansThaiPath}) format('woff2');
+        }
+      `,
     },
   },
 });
