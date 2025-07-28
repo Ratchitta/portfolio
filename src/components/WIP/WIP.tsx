@@ -1,6 +1,6 @@
-import { Text } from "components/Text";
+import { Text } from "@/components/Text";
 import { Flex } from "..";
-import { Image } from "components/Image";
+import { Image } from "@/components/Image";
 
 const WIP = () => {
   return (

@@ -1,8 +1,8 @@
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
-import { AppRoute } from "pages/routes";
+import { AppRoute } from "@/pages/routes";
 import { BrowserRouter } from "react-router-dom";
-import { theme } from "theme";
+import { theme } from "./theme";
 
 function App() {
   return (

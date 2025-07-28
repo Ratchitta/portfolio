@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Layout, WIP } from "components/";
+import { Layout, WIP } from "@/components/";
 
 const AppRoute = () => {
   return (
