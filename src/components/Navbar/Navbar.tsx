@@ -3,11 +3,11 @@ import { Box, Container } from "@mui/material";
 
 import ExpandIcon from "@mui/icons-material/ExpandMoreRounded";
 
-import { Flex, Link, Text } from "components/";
+import { Flex, Link, Text } from "@/components/";
 import { Button, Menu, MenuItem, Icon } from "@mui/material";
 import { projects } from "./tabs";
 import { useNavigate } from "react-router-dom";
-import { useDisclosure } from "hooks";
+import { useDisclosure } from "@/hooks";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);

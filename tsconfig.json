@@ -16,7 +16,11 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "./src",
-    "outDir": "/public"
+    "outDir": "/public",
+    "paths": {
+      "@/*": ["*"],
+      "@": ["."]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src"],
   "exclude": ["node_modules"]
