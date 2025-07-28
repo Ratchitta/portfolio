@@ -4,18 +4,18 @@
   "homepage": "https://portfolio.ratchitta.dev",
   "private": true,
   "dependencies": {
-    "@mui/icons-material": "^5.14.7",
-    "@mui/material": "^5.14.7",
-    "@types/node": "^16.18.47",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
+    "@mui/icons-material": "^7.2.0",
+    "@mui/material": "^7.2.0",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "aos": "^2.3.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.1",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "typescript": "^5.8.3",
+    "web-vitals": "^5.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,8 +44,8 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "gh-pages": "^6.0.0"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "gh-pages": "^6.3.0"
   }
 }
