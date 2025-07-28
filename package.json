@@ -1,7 +1,7 @@
 {
-  "name": "mkmksgit.github.io",
+  "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://mkmksgit.github.io",
+  "homepage": "https://portfolio.ratchitta.dev",
   "private": true,
   "dependencies": {
     "@mui/icons-material": "^5.14.7",
