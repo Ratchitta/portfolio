@@ -24,3 +24,5 @@ yarn-error.log*
 
 .env
 dist
+.yarn/install-state.gz
+.yarn/releases/yarn-4.9.2.cjs
